@@ -14,7 +14,7 @@ wwv_flow_api.component_begin (
 wwv_flow_api.create_page(
  p_id=>1
 ,p_user_interface_id=>wwv_flow_api.id(1516216845576003405)
-,p_name=>'Smple Database Application'
+,p_name=>'Sample Database Application'
 ,p_alias=>'SAMPLE-DATABASE-APPLICATION'
 ,p_step_title=>'&APP_NAME.'
 ,p_reload_on_submit=>'A'
