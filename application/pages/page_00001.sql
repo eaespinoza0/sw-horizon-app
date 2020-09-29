@@ -14,7 +14,7 @@ wwv_flow_api.component_begin (
 wwv_flow_api.create_page(
  p_id=>1
 ,p_user_interface_id=>wwv_flow_api.id(1516216845576003405)
-,p_name=>'Sample Database Application'
+,p_name=>'Smple Database Application'
 ,p_alias=>'SAMPLE-DATABASE-APPLICATION'
 ,p_step_title=>'&APP_NAME.'
 ,p_reload_on_submit=>'A'
@@ -29,7 +29,8 @@ wwv_flow_api.create_page(
 '<p>',
 'The <strong>My Quota</strong> region is a Flash chart type called  Dial Chart.  It is dynamically rendered based on a SQL Statement each time the page is viewed.  <strong>My Top Orders</strong> displays the top five orders for the currently signed in'
 ||' user, based on order total.  The <strong>Tasks</strong> region is an example of using a List to provide easy navigation to common tasks.'))
-,p_last_upd_yyyymmddhh24miss=>'20200116130021'
+,p_last_updated_by=>'EESPINOZA'
+,p_last_upd_yyyymmddhh24miss=>'20200929194642'
 );
 wwv_flow_api.create_report_region(
  p_id=>wwv_flow_api.id(1389285009333460699)
@@ -318,7 +319,7 @@ wwv_flow_api.create_page_plug(
 );
 wwv_flow_api.create_page_plug(
  p_id=>wwv_flow_api.id(1448481853162662287)
-,p_plug_name=>'Sample Database Application'
+,p_plug_name=>'Smple Database Application'
 ,p_icon_css_classes=>'app-sample-database-application'
 ,p_region_template_options=>'#DEFAULT#'
 ,p_plug_template=>wwv_flow_api.id(1256117884889075656)
@@ -326,6 +327,7 @@ wwv_flow_api.create_page_plug(
 ,p_include_in_reg_disp_sel_yn=>'Y'
 ,p_plug_display_point=>'REGION_POSITION_01'
 ,p_plug_source=>'<p>Track and Manage Customers, Orders and Products</p>'
+,p_plug_query_options=>'DERIVED_REPORT_COLUMNS'
 ,p_attribute_01=>'N'
 ,p_attribute_02=>'HTML'
 );
@@ -517,8 +519,20 @@ wwv_flow_api.create_report_columns(
 ,p_hidden_column=>'Y'
 );
 wwv_flow_api.create_page_button(
- p_id=>wwv_flow_api.id(1682185443396571795)
+ p_id=>wwv_flow_api.id(6148886938068115)
 ,p_button_sequence=>10
+,p_button_plug_id=>wwv_flow_api.id(2146511562861874352)
+,p_button_name=>'PRINT'
+,p_button_action=>'SUBMIT'
+,p_button_template_options=>'#DEFAULT#'
+,p_button_template_id=>wwv_flow_api.id(1256135138550075720)
+,p_button_is_hot=>'Y'
+,p_button_image_alt=>'Print'
+,p_button_position=>'REGION_TEMPLATE_EDIT'
+);
+wwv_flow_api.create_page_button(
+ p_id=>wwv_flow_api.id(1682185443396571795)
+,p_button_sequence=>20
 ,p_button_plug_id=>wwv_flow_api.id(2146511562861874352)
 ,p_button_name=>'VIEW_MONTH_ORDERS'
 ,p_button_action=>'REDIRECT_PAGE'
